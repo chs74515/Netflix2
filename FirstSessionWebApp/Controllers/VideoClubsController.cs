@@ -76,7 +76,10 @@ namespace FirstSessionWebApp.Controllers
         // GET: VideoClubsController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            var vc = _context.VideoClubs.Where(c => c.ID == id).FirstOrDefault();
+            _context.VideoClubs.Remove(vc);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
         }
 
         // POST: VideoClubsController/Delete/5
