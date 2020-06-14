@@ -8,5 +8,7 @@ namespace FirstSessionWebApp.Models
     public class TestModel
     {
         public int Id { get; set; }
+
+        public String flavours { get; set; }
     }
 }
