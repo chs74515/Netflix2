@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="text-center container">
+        <h1>@Model.Title</h1>
+        <p>@Model.Category.Title</p>
+        <p>@Model.Description</p>
+
+        <!-- add movie trailer here -->
+        @Html.Raw(Model.Trailer)
+    @*<a href="https://www.youtube.com/watch?v=owU3lMxd6jI">Trailer link</a> <iframe width="560"
+                    height="315"
+                    src="https://www.youtube.com/watch?v=owU3lMxd6jI"
+                    frameborder="0"
+                    allowfullscreen></iframe>
+
+<iframe id="ytplayer" type="text/html" width="640" height="360"
+    src="https://www.youtube.com/watch?v=owU3lMxd6jI"
+    frameborder="0"></iframe>*@
+        
+    </div>

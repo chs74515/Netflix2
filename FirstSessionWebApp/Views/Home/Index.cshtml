@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center container">
+   <h1>NETFLIX</h1>
+
+    @foreach (var m in Model) 
+    {
+        <p>
+            <a asp-controller="Home" asp-action="Details" asp-route-id="@m.Id">@m.Title - @m.Category.Title</a>
+            <a asp-controller="Home" asp-action="Delete" asp-route-id="@m.Id">Delete</a>
+        </p>
+    }
+</div>

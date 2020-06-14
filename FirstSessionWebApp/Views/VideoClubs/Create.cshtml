@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container">
+    <h1>AddNewVideoClubs</h1>
+
+    <form asp-controller="VideoClubs" asp-action="Create" method="post" style="width: 50%;">
+        
+        <div class="form-group">
+            <label for="Name">Name:</label>
+            <input type="text" class="form-control" id="Name" name="Name">
+        </div>
+        <div class="form-group">
+            <label for="Address">Address:</label>
+            <input type="text" class="form-control" id="Adress" name="Address">
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>
+
+

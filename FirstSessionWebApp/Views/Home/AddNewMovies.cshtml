@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewData["Title"] = "AddNewMovies";
+}
+
+<div class="container">
+    <h1>AddNewMovies</h1>
+
+    <form asp-controller="Home" asp-action="AddNewMovies" method="post" style="width: 50%;">
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" class="form-control" id="title" name="title">
+        </div>
+        <div class="form-group">
+            <label for="rating">Rating:</label>
+            <input type="text" class="form-control" id="rating" name="rating">
+        </div>
+        <div class="form-group">
+            <label for="rating">Description:</label>
+            <input type="text" class="form-control" id="description" name="description">
+        </div>
+        <div class="form-group">
+            <label for="trailer">Youtube trailer:</label>
+            <input type="text" class="form-control" id="trailer" name="trailer">
+        </div>
+        <div class="form-group">
+            <label for="category">Category:</label>
+            <input type="text" class="form-control" id="category" name="categoryId">
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+</div>
+
+
+
+
