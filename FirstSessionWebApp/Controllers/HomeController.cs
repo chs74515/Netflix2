@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using FirstSessionWebApp.Models;
 using FirstSessionWebApp.Data;
 using Microsoft.EntityFrameworkCore;
+using FirstSessionWebApp.ViewModels;
 
 namespace FirstSessionWebApp.Controllers
 {
@@ -55,7 +56,11 @@ namespace FirstSessionWebApp.Controllers
         public IActionResult AddNewMovies()
         {
             // HttpGet and HttpPost - EVERYTHING! 
-            return View();
+            MovieCategoryViewModel mcvm = new MovieCategoryViewModel();
+            var cats = _context.Categories.ToList();
+            mcvm.Categories = cats;
+
+            return View(mcvm);
         }
 
         [HttpPost]

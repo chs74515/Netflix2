@@ -17,7 +17,6 @@ namespace FirstSessionWebApp.Data
 
         public DbSet<Movie> Movies { get; set; }
         public DbSet<Category> Categories { get; set; }
-
         public DbSet<VideoClubs> VideoClubs { get; set; }
     }
 }
